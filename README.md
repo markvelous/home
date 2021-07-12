@@ -1,6 +1,6 @@
 # Markvelous Homepage 
 
-![Landing Page](./home.png)
+![Landing Page](./img/home.png)
 
 
 Adapted from the [Landing Page](https://www.tailwindtoolbox.com/templates/landing-page), an open source, generic landing page template for [Tailwind CSS](https://tailwindcss.com/) created by [Tailwind Toolbox](https://www.tailwindtoolbox.com/).

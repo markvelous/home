@@ -1,9 +1,9 @@
-# [Tailwind Toolbox](https://www.tailwindtoolbox.com/) - [Landing Page Template](https://www.tailwindtoolbox.com/templates/landing-page)
+# Markvelous Homepage 
 
-[Landing Page](https://www.tailwindtoolbox.com/templates/landing-page) is an open source, generic landing page template for [Tailwind CSS](https://tailwindcss.com/) created by [Tailwind Toolbox](https://www.tailwindtoolbox.com/).
+![Landing Page](./home.png)
 
-![Landing Page](https://www.tailwindtoolbox.com/templates/landing-page.png)
 
+Adapted from the [Landing Page](https://www.tailwindtoolbox.com/templates/landing-page), an open source, generic landing page template for [Tailwind CSS](https://tailwindcss.com/) created by [Tailwind Toolbox](https://www.tailwindtoolbox.com/).
 
 ## Image Attribution
 

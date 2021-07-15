@@ -1,478 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>
-      Markvelous Tailwind Project Microsite
-    </title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" />
-    <!--Replace with your tailwind.css once created-->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
-    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
-    <style>
-      .gradient {
-        background: linear-gradient(90deg, #4b77a0 0%, #33273f 100%);
-      }
-    </style>
-  </head>
-  <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
-    <!--Nav-->
-    <nav id="header" class="fixed w-full z-30 top-0 text-white">
-      <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-        <div class="pl-4 flex items-center">
-          <a class="toggleColour text-black hover:no-underline font-bold text-2xl lg:text-3xl">
-			MARKVELOUS 
-			<!--Icon from: http://www.potlabicons.com/ -->
-            <svg class="h-9 fill-current inline" xmlns="http://www.w3.org/2000/svg">
-			  <path 
-			    class="robot"
-				d=" M 16 1 C 14.894531 1 14 1.894531 14 3 C 14 3.738281 14.402344 4.371094 15 4.71875 L 15 7 L 10 7 C 7.25 7 5 9.25 5 12 L 5 14 L 2 14 L 2 22 L 5 22 L 5 27 L 27 27 L 27 22 L 30 22 L 30 14 L 27 14 L 27 12 C 27 9.25 24.75 7 22 7 L 17 7 L 17 4.71875 C 17.597656 4.371094 18 3.738281 18 3 C 18 1.894531 17.105469 1 16 1 Z M 10 9 L 22 9 C 23.667969 9 25 10.332031 25 12 L 25 25 L 23 25 L 23 20 L 9 20 L 9 25 L 7 25 L 7 12 C 7 10.332031 8.332031 9 10 9 Z M 12 13 C 10.894531 13 10 13.894531 10 15 C 10 16.105469 10.894531 17 12 17 C 13.105469 17 14 16.105469 14 15 C 14 13.894531 13.105469 13 12 13 Z M 20 13 C 18.894531 13 18 13.894531 18 15 C 18 16.105469 18.894531 17 20 17 C 21.105469 17 22 16.105469 22 15 C 22 13.894531 21.105469 13 20 13 Z M 4 16 L 5 16 L 5 20 L 4 20 Z M 27 16 L 28 16 L 28 20 L 27 20 Z M 11 22 L 13 22 L 13 25 L 11 25 Z M 15 22 L 17 22 L 17 25 L 15 25 Z M 19 22 L 21 22 L 21 25 L 19 25 Z "
-			  /><br>
-            </svg>
 
-          </a>
-        </div>
-      </div>
-      <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
-    </nav>
-    <!--Hero-->
-    <div class="pt-24">
-      <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-        <!--Left Col-->
-        <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-          <p class="uppercase tracking-loose w-full">SGBT4 - P7210027 Mark Tan</p>
-          <h1 class="my-4 text-5xl font-bold leading-tight">
-            Blockchain Beginner
-          </h1>
-          <p class="leading-normal text-2xl mb-8">
-            Course Assignment
-          </p>
-          <button class="mx-auto lg:mx-0 bg-pink-200 text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-            28 Jul 2021
-          </button>
-        </div>
-        <!--Right Col-->
-        <div class="w-full md:w-3/5 py-6 text-center">
-          <img class="w-full md:w-4/5 z-50" src="./img/hero.png" />
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>
+    Markvelous Project Microsite (using Tailwind)
+  </title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" />
+  <!--Replace with your tailwind.css once created-->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+  <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+  <style>
+    .gradient {
+      background: linear-gradient(90deg, #4b77a0 0%, #33273f 100%);
+    }
+  </style>
+</head>
+
+<body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+  <!--Nav-->
+  <nav id="header" class="fixed w-full z-30 top-0 text-white">
+    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+      <div class="pl-4 flex items-center">
+        <a class="toggleColour text-black hover:no-underline font-bold text-2xl lg:text-3xl">
+          MARKVELOUS
+          <!--Icon from: http://www.potlabicons.com/ -->
+          <svg class="h-9 fill-current inline" xmlns="http://www.w3.org/2000/svg">
+            <path class="robot"
+              d=" M 16 1 C 14.894531 1 14 1.894531 14 3 C 14 3.738281 14.402344 4.371094 15 4.71875 L 15 7 L 10 7 C 7.25 7 5 9.25 5 12 L 5 14 L 2 14 L 2 22 L 5 22 L 5 27 L 27 27 L 27 22 L 30 22 L 30 14 L 27 14 L 27 12 C 27 9.25 24.75 7 22 7 L 17 7 L 17 4.71875 C 17.597656 4.371094 18 3.738281 18 3 C 18 1.894531 17.105469 1 16 1 Z M 10 9 L 22 9 C 23.667969 9 25 10.332031 25 12 L 25 25 L 23 25 L 23 20 L 9 20 L 9 25 L 7 25 L 7 12 C 7 10.332031 8.332031 9 10 9 Z M 12 13 C 10.894531 13 10 13.894531 10 15 C 10 16.105469 10.894531 17 12 17 C 13.105469 17 14 16.105469 14 15 C 14 13.894531 13.105469 13 12 13 Z M 20 13 C 18.894531 13 18 13.894531 18 15 C 18 16.105469 18.894531 17 20 17 C 21.105469 17 22 16.105469 22 15 C 22 13.894531 21.105469 13 20 13 Z M 4 16 L 5 16 L 5 20 L 4 20 Z M 27 16 L 28 16 L 28 20 L 27 20 Z M 11 22 L 13 22 L 13 25 L 11 25 Z M 15 22 L 17 22 L 17 25 L 15 25 Z M 19 22 L 21 22 L 21 25 L 19 25 Z " />
+          </svg>
+          <br>
+        </a>
       </div>
     </div>
-    <div class="relative -mt-12 lg:-mt-24">
-      <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
-            <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
-            <path
-              d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-              opacity="0.100000001"
-            ></path>
-            <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003"></path>
-          </g>
-          <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
-            <path
-              d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
-            ></path>
-          </g>
-        </g>
-      </svg>
-    </div>
-    <section class="bg-white border-b py-8">
-      <div class="container max-w-5xl mx-auto m-8">
-        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-          Projects
+    <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+  </nav>
+  <!--Hero-->
+  <div class="pt-24">
+    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+      <!--Left Col-->
+      <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+        <p class="uppercase tracking-loose w-full">SGBT4 - P7210027 Mark Tan</p>
+        <h1 class="my-4 text-5xl text-yellow-400 font-bold leading-tight">
+          Blockchain Beginner
         </h1>
-        <div class="w-full mb-4">
-          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-        </div>
-        <div class="flex flex-wrap">
-          <div class="w-5/6 sm:w-1/2 p-6">
-            <h3 class="text-4xl text-gray-800 font-bold leading-none mb-3">
-              Mark Bark Park
-            </h3>
-			<h4 class="text-2xl text-gray-500 leading-none mb-3">
-                Made payable
-              </h4>
-			<br />
-			<div class="text-1 text-gray-500 font-normal leading-none mb-3">
-			  <ul class="list-reset mb-6">
-				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; Extension of Lab 5 Pet Shop</a>
-				</li> 
-				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; Added payable function to process the 0.1 ether adoption fee</a>
-				</li>
-				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; Development suite: Solidity, JS, HTML, Truffle, Ganache</a>
-				</li> 
-			  </ul>		
-			 </div>
-			 <br />
-            <p class="text-gray-600 mb-8">
-              Github: <a class="text-pink-500 underline" href="https://github.com/markvelous/markbarkpark">markbarkpark</a><br>
-              Netifly: Not deployed, running locally on Ganache
-            </p>
-          </div>
-          <div class="w-full sm:w-1/2 p-6">
-            <img src="./img/markbarkpark.png" alt="Mark Bark Park Homepage" style="width:100%">   
-		  </div>
-        </div>
-		
-		<br>
-		<div class="w-full mb-4">
-          <div class="h-1 mx-auto gradient w-64 opacity-5 my-0 py-0 rounded-t"></div>
-        </div>
-
-        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-          <div class="w-full sm:w-1/2 p-6 mt-6">
-            <img src="./img/botdapp.png" alt="BotDapp Homepage" style="width:100%">   
-		  </div>
-          <div class="w-full sm:w-1/2 p-6 mt-6">
-            <div class="align-middle">
-              <h3 class="text-4xl text-gray-800 font-bold leading-none mb-3">
-                Bot Dapp
-              </h3>
-			  <h4 class="text-2xl text-gray-500 leading-none mb-3">
-                Made prettier
-              </h4>
-              <br />
-			  <div class="text-l text-gray-500 font-normal leading-none mb-3">
-			  <ul class="list-reset mb-6">
-				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; Extension of Lab 4 Open for Business</a>
-				</li> 
-				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; Improved the app design & handling of some errors</a>
-				</li> 
-				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; Installed elevations in Tailwind to improve visual impact of images</a>
-				</li>
-				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; Added hero patterns svg to spruce up background</a>
-				</li> 
-				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; Moved mint button up and used hover with contrasting colour for better UX</a>
-				</li>
-				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; Enabled click outside of the modal to clear screen or interrupt transactions</a>
-				</li> 
-				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; Adjusted settings to optimise look-and-feel and responsiveness on different devices</a>
-				</li>
-				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; Added truncate function to prevent  long owner address from overflowing (npm install react-truncate)</a>
-				</li>
-				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; Development suite: Solidity, Hardhat, React JS, Tailwind</a>
-				</li> 
-			  </ul>		
-			 </div>
-			 <br />
-			  <p class="text-gray-600 mb-8">
-				Github: <a class="text-pink-500 underline" href="https://github.com/markvelous/botdapp">botdapp</a><br>
-                Netifly: <a class="text-pink-500 underline" href="https://botdapp.netlify.app/">BotDapp</a>
-              </p>
-            </div>
-          </div>
-        </div>
-		
-		<br>
-		<div class="w-full mb-4">
-          <div class="h-1 mx-auto gradient w-64 opacity-5 my-0 py-0 rounded-t"></div>
-        </div>
-		
-		<div class="flex flex-wrap">
-          <div class="w-5/6 sm:w-1/2 p-6">
-            <h3 class="text-4xl text-gray-800 font-bold leading-none mb-3">
-              Bot Dapp 2
-            </h3>
-			<h4 class="text-2xl text-gray-500 leading-none mb-3">
-                Mint any NFT hosted on cloud
-            </h4>
-            <br />
-			<div class="text-l text-gray-500 font-normal leading-none mb-3">
-			  <ul class="list-reset mb-6">
-				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; Minting of any number of robots (or digital assets) with URL, name and CID provided by the minter</a>
-				</li>
-				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; NFT is registered in Rinkeby smart contract and Pinata IPFS</a>
-				</li>				
-				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; Development suite: Solidity, Hardhat, React JS, Tailwind</a>
-				</li> 
-			  </ul>		
-			 </div>
-			 <br />
-			<p class="text-gray-600 mb-8">
-              Github: <a class="text-pink-500 underline" href="https://github.com/markvelous/botdapp2">botdapp2</a><br>
-              Netifly: <a class="text-pink-500 underline" href="https://botdapp2.netlify.app/">BotDapp 2</a> 
-			  <br>
-              Solidity contract:
-              <a class="text-pink-500 underline" href="https://rinkeby.etherscan.io/address/0x9049a2C93E7cf4d5aaF2baA9e1f404a0d766de1F">0x9049a2C93E7cf4d5aaF2baA9e1f404a0d766de1F</a>
-            </p>
-          </div>
-          <div class="w-full sm:w-1/2 p-6">
-            <img src="./img/botdapp2.png" alt="BotDapp 2 Homepage" style="width:100%"> 
-          </div>
-        </div>
-		
-		<br>
-		<div class="w-full mb-4">
-          <div class="h-1 mx-auto gradient w-64 opacity-5 my-0 py-0 rounded-t"></div>
-        </div>
-		
-        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-          <div class="w-full sm:w-1/2 p-6 mt-6">
-			<img src="./img/botdapp3.png" alt="BotDapp 3 Homepage" style="width:100%"> 
-          </div>
-          <div class="w-full sm:w-1/2 p-6 mt-6">
-            <div class="align-middle">
-              <h3 class="text-4xl text-gray-800 font-bold leading-none mb-3">
-                Bot Dapp 3
-              </h3>
-			  <h4 class="text-2xl text-gray-500 leading-none mb-3">
-                Mint infinite number of unique Robohash NFTs
-              </h4>
-              <br />
-			<div class="text-1 text-gray-500 font-normal leading-none mb-3">
-			  <ul class="list-reset mb-6">
-				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; Generate and mint robohash NFTs on the fly</a>
-				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; Prevented ID repetition (bot name)</a>
-				</li>
-				</li>				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; Added dynamic url using https://robohash.org/{bot}?size=150x150</a>
-				</li> 
-				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; Added truncation to prevent text overflow</a>
-				</li>
-				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; Reconfigured setup to deploy contract on Rinkeby (instead of Ganache) using hardwallet</a>
-				</li>
-				<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-				  <a>&#x25BA; Development suite: Solidity, React JS, Truffle, Ganache</a>
-				</li> 
-			  </ul>		
-			 </div>
-			 <br />
-			  <p class="text-gray-600 mb-8">
-                Github: <a class="text-pink-500 underline" href="https://github.com/markvelous/botdapp3">botdapp3</a><br>
-				Netifly: <a class="text-pink-500 underline" href="https://markobots.netlify.app/">Markobots</a>
-				<br>
-				Solidity contract:
-				<a class="text-pink-500 underline" href="https://rinkeby.etherscan.io/address/0xB7d67fa0B552105c3Bcc7e15374Ea26B67A3b5A6">0xB7d67fa0B552105c3Bcc7e15374Ea26B67A3b5A6</a>
-              </p>
-            </div>
-          </div>
-        </div>
-		
-		<div》
-			<h4 class="text-l text-gray-400 leading-none mb-3">
-                * This project website is developed using Tailwind, Github and Netlify
-			</h4>
-		</div>
-		
+        <p class="leading-normal text-2xl mb-8">
+          Course Assignment
+        </p>
+        <button
+          class="mx-auto lg:mx-4 bg-white text-red-700 font-normal rounded-full my-4 py-3 px-10 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          28 Jul 2021
+        </button>
       </div>
-    </section>
-       
-    <!-- Change the colour #f8fafc to match the previous section colour -->
-    <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!--Right Col-->
+      <div class="w-full md:w-3/5 py-6 text-center">
+        <img class="w-full md:w-4/5 z-50" src="./img/hero.png" />
+      </div>
+    </div>
+  </div>
+  <div class="relative -mt-12 lg:-mt-24">
+    <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink">
       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
-          <g class="wave" fill="#f8fafc">
-            <path
-              d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
-            ></path>
-          </g>
-          <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
-            <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
-              <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
-              <path
-                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-                opacity="0.100000001"
-              ></path>
-              <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" opacity="0.200000003"></path>
-            </g>
-          </g>
+        <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+          <path
+            d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+            opacity="0.100000001"></path>
+          <path
+            d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+            opacity="0.100000001"></path>
+          <path
+            d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+            id="Path-4" opacity="0.200000003"></path>
+        </g>
+        <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+          <path
+            d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z">
+          </path>
         </g>
       </g>
     </svg>
-    <section class="container mx-auto text-center py-6 mb-12">
-      <h1 class="w-full my-2 text-3xl font-bold leading-tight text-center text-white">
-        Course Assignment Report 
+  </div>
+  <section class="bg-white border-b py-8">
+    <div class="container max-w-5xl mx-auto m-8">
+      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+        Projects
       </h1>
       <div class="w-full mb-4">
-        <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
+        <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
       </div>
-      <h3 class="my-4 text-3l leading-tight">
-        Download the course assignment report (PDF, 103KB)
-      </h3>
-      <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-        <a href="./submission.pdf" target="_blank" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Download</a>
-      </button>
-    </section>
-    <!--Footer-->
-    <footer class="bg-white">
-      <div class="container mx-auto px-8">
-        <div class="w-full flex flex-col md:flex-row py-6">
-          <div class="flex-1 mb-6 text-black">
-            <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-              RESOURCES
-            </a>
-          </div>
-          <div class="flex-1">
-            <p class="uppercase text-gray-500 md:mb-6">Downloads</p>
+      <div class="flex flex-wrap">
+        <div class="w-5/6 sm:w-1/2 p-6">
+          <h3 class="text-4xl text-gray-800 font-bold leading-none mb-3">
+            Mark Bark Park
+          </h3>
+          <h4 class="text-2xl text-gray-500 leading-none mb-3">
+            Made payable
+          </h4>
+          <br />
+          <div class="text-1 text-gray-500 font-normal leading-none mb-3">
             <ul class="list-reset mb-6">
               <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="https://www.trufflesuite.com/ganache" target="_blank" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Ganache</a>
+                <a>&#x25BA; Extension of Lab 5 Pet Shop</a>
               </li>
               <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="https://hardhat.org/" target="_blank" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Hardhat</a>
-              </li>
-			  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="https://metamask.io/" target="_blank" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Metamask</a>
+                <a>&#x25BA; Added payable function to process the 0.1 ether adoption fee</a>
               </li>
               <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="https://tailwindcss.com/" target="_blank" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Tailwind CSS</a>
-              </li>
-			  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="https://www.trufflesuite.com/truffle" target="_blank" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Truffle</a>
-              </li>
-			  
-            </ul>
-          </div>
-          <div class="flex-1">
-            <p class="uppercase text-gray-500 md:mb-6">Cloud</p>
-            <ul class="list-reset mb-6">
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="https://www.alchemy.com/" target="_blank" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Alchemy</a>
-              </li>
-			  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="https://github.com/" target="_blank" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Github</a>
-              </li>
-			  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="https://www.netlify.com/" target="_blank" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Netifly</a>
-              </li>
-			  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="https://testnets.opensea.io/" target="_blank" class="no-underline hover:underline text-gray-800 hover:text-pink-500">OpenSea</a>
+                <a>&#x25B7; Not deployed on Netlify, running locally on Ganache</a>
               </li>
               <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="https://pinata.cloud/" target="_blank" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Pinata</a>
+                <a>&#x25BA; Development suite: Solidity, JS, HTML, Truffle, Ganache</a>
               </li>
             </ul>
           </div>
-          <div class="flex-1">
-            <p class="uppercase text-gray-500 md:mb-6">Ethereum Testnet</p>
-            <ul class="list-reset mb-6">
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="https://rinkeby.etherscan.io/" target="_blank" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Rinkeby Etherscan</a>
-              </li>
-			  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="https://faucet.rinkeby.io/" target="_blank" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Rinkeby Faucet</a>
-              </li>
-            </ul>
-          </div>
-          <div class="flex-1">
-            <p class="uppercase text-gray-500 md:mb-6">Developer</p>
-            <ul class="list-reset mb-6">
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="mailto:tan_kok_seng_mark01.pt@ichat.sp.edu.sg" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Enquiry</a>
-              </li>
-            </ul>
+          <br />
+          <button
+            class="mx-auto lg:mx-0 hover:underline bg-gray-200 text-gray-800 font-bold rounded-full my-4 py-3 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            <a href="https://github.com/markvelous/markbarkpark" target="_blank"
+              class="no-underline hover:underline text-gray-800 hover:text-pink-500">Github</a>
+          </button>
+        </div>
+        <div class="w-full sm:w-1/2 p-6">
+          <img src="./img/markbarkpark.png" alt="Mark Bark Park Homepage" style="width:100%">
+        </div>
+      </div>
+
+      <br>
+
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto gradient w-64 opacity-5 my-0 py-0 rounded-t"></div>
+      </div>
+
+      <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+        <div class="w-full sm:w-1/2 p-6 mt-6">
+          <img src="./img/botdapp.png" alt="BotDapp Homepage" style="width:100%">
+        </div>
+        <div class="w-full sm:w-1/2 p-6 mt-6">
+          <div class="align-middle">
+            <h3 class="text-4xl text-gray-800 font-bold leading-none mb-3">
+              Bot Dapp
+            </h3>
+            <h4 class="text-2xl text-gray-500 leading-none mb-3">
+              Made prettier
+            </h4>
+            <br />
+            <div class="text-l text-gray-500 font-normal leading-none mb-3">
+              <ul class="list-reset mb-6">
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a>&#x25BA; Extension of Lab 4 Open for Business</a>
+                </li>
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a>&#x25BA; Improved the app design & handling of some errors</a>
+                </li>
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a>&#x25BA; Installed elevations in Tailwind to improve visual impact of images</a>
+                </li>
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a>&#x25BA; Added hero patterns svg to spruce up background</a>
+                </li>
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a>&#x25BA; Moved mint button up and used hover with contrasting colour for better UX</a>
+                </li>
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a>&#x25BA; Enabled click outside of the modal to clear screen or interrupt transactions</a>
+                </li>
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a>&#x25BA; Adjusted settings to optimise look-and-feel and responsiveness on different devices</a>
+                </li>
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a>&#x25BA; Added truncate function to prevent long owner address from overflowing (npm install
+                    react-truncate)</a>
+                </li>
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a>&#x25BA; Development suite: Solidity, Hardhat, React JS, Tailwind</a>
+                </li>
+              </ul>
+            </div>
+            <br />
+            <button
+              class="mx-auto lg:mx-0 hover:underline bg-gray-200 text-gray-800 font-bold rounded-full my-4 py-3 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              <a href="https://github.com/markvelous/botdapp" target="_blank"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Github</a>
+            </button>
+            <button
+              class="mx-auto lg:mx-0 hover:underline bg-pink-200 text-gray-800 font-bold rounded-full my-4 py-3 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              <a href="https://botdapp.netlify.app/" target="_blank"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Netlify</a>
+            </button>
           </div>
         </div>
       </div>
-      <a href="https://www.freepik.com/free-photos-vectors/background" class="text-gray-500">Background vector created by freepik - www.freepik.com</a>
-    </footer>
-    <!-- jQuery if you need it
+
+      <br>
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto gradient w-64 opacity-5 my-0 py-0 rounded-t"></div>
+      </div>
+
+      <div class="flex flex-wrap">
+        <div class="w-5/6 sm:w-1/2 p-6">
+          <h3 class="text-4xl text-gray-800 font-bold leading-none mb-3">
+            Bot Dapp 2
+          </h3>
+          <h4 class="text-2xl text-gray-500 leading-none mb-3">
+            Mint any NFT hosted on cloud
+          </h4>
+          <br />
+          <div class="text-l text-gray-500 font-normal leading-none mb-3">
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a>&#x25BA; Minting of any number of robots (or digital assets) with URL, name and CID provided by the
+                  minter</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a>&#x25BA; NFT is registered in Rinkeby smart contract and Pinata IPFS</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a>&#x25BA; Development suite: Solidity, Hardhat, React JS, Tailwind</a>
+              </li>
+            </ul>
+          </div>
+          <br />
+          <button
+            class="mx-auto lg:mx-0 hover:underline bg-gray-200 text-gray-800 font-bold rounded-full my-4 py-3 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            <a href="https://github.com/markvelous/botdapp2" target="_blank"
+              class="no-underline hover:underline text-gray-800 hover:text-pink-500">Github</a>
+          </button>
+          <button
+            class="mx-auto lg:mx-0 hover:underline bg-pink-200 text-gray-800 font-bold rounded-full my-4 py-3 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            <a href="https://botdapp2.netlify.app/" target="_blank"
+              class="no-underline hover:underline text-gray-800 hover:text-pink-500">Netlify</a>
+          </button>
+          <button
+            class="mx-auto lg:mx-0 hover:underline bg-blue-300 text-gray-800 font-bold rounded-full my-4 py-3 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            <a href="https://rinkeby.etherscan.io/address/0x9049a2C93E7cf4d5aaF2baA9e1f404a0d766de1F" target="_blank"
+              class="no-underline hover:underline text-gray-800 hover:text-pink-500">Solidity</a>
+          </button>
+        </div>
+        <div class="w-full sm:w-1/2 p-6">
+          <img src="./img/botdapp2.png" alt="BotDapp 2 Homepage" style="width:100%">
+        </div>
+      </div>
+
+      <br>
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto gradient w-64 opacity-5 my-0 py-0 rounded-t"></div>
+      </div>
+
+      <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+        <div class="w-full sm:w-1/2 p-6 mt-6">
+          <img src="./img/botdapp3.png" alt="BotDapp 3 Homepage" style="width:100%">
+        </div>
+        <div class="w-full sm:w-1/2 p-6 mt-6">
+          <div class="align-middle">
+            <h3 class="text-4xl text-gray-800 font-bold leading-none mb-3">
+              Bot Dapp 3
+            </h3>
+            <h4 class="text-2xl text-gray-500 leading-none mb-3">
+              Mint infinite number of unique Robohash NFTs
+            </h4>
+            <br />
+            <div class="text-1 text-gray-500 font-normal leading-none mb-3">
+              <ul class="list-reset mb-6">
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a>&#x25BA; Generate and mint robohash NFTs on the fly</a>
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a>&#x25BA; Prevented ID repetition (bot name)</a>
+                </li>
+                </li>
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a>&#x25BA; Added dynamic url using https://robohash.org/{bot}?size=150x150</a>
+                </li>
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a>&#x25BA; Added truncation to prevent text overflow</a>
+                </li>
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a>&#x25BA; Reconfigured setup to deploy contract on Rinkeby (instead of Ganache) using hardwallet</a>
+                </li>
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a>&#x25BA; Development suite: Solidity, React JS, Truffle, Ganache</a>
+                </li>
+              </ul>
+            </div>
+            <br />
+            <button
+              class="mx-auto lg:mx-0 hover:underline bg-gray-200 text-gray-800 font-bold rounded-full my-4 py-3 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              <a href="https://github.com/markvelous/botdapp3" target="_blank"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Github</a>
+            </button>
+            <button
+              class="mx-auto lg:mx-0 hover:underline bg-pink-200 text-gray-800 font-bold rounded-full my-4 py-3 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              <a href="https://markobots.netlify.app/" target="_blank"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Netlify</a>
+            </button>
+            <button
+              class="mx-auto lg:mx-0 hover:underline bg-blue-300 text-gray-800 font-bold rounded-full my-4 py-3 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              <a href="https://rinkeby.etherscan.io/address/0xB7d67fa0B552105c3Bcc7e15374Ea26B67A3b5A6" target="_blank"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Solidity</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <a class="text-l text-gray-600 leading-none mt-6">
+        * This project website is developed using Tailwind, Github and Netlify
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Change the colour #f8fafc to match the previous section colour -->
+  <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+        <g class="wave" fill="#f8fafc">
+          <path
+            d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z">
+          </path>
+        </g>
+        <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+          <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
+            <path
+              d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+              opacity="0.100000001"></path>
+            <path
+              d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+              opacity="0.100000001"></path>
+            <path
+              d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+              opacity="0.200000003"></path>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <section class="container mx-auto text-center py-6 mb-12">
+    <h1 class="w-full my-2 text-3xl font-bold leading-tight text-center text-white">
+      Course Assignment Report
+    </h1>
+    <div class="w-full mb-4">
+      <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
+    </div>
+    <h3 class="my-4 text-3l leading-tight">
+      Download the course assignment report (PDF, 103KB)
+    </h3>
+    <button
+      class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-4 py-3 px-10 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+      <a href="./submission.pdf" target="_blank"
+        class="no-underline hover:underline text-gray-800 hover:text-pink-500">Download</a>
+    </button>
+  </section>
+  <!--Footer-->
+  <footer class="bg-white">
+    <div class="container mx-auto px-8">
+      <div class="w-full flex flex-col md:flex-row py-6">
+        <div class="flex-1 mb-6 text-black">
+          <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+            RESOURCES
+          </a>
+        </div>
+        <div class="flex-1">
+          <p class="uppercase text-gray-500 md:mb-6">Downloads</p>
+          <ul class="list-reset mb-6">
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="https://www.trufflesuite.com/ganache" target="_blank"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Ganache</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="https://hardhat.org/" target="_blank"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Hardhat</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="https://metamask.io/" target="_blank"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Metamask</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="https://tailwindcss.com/" target="_blank"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Tailwind CSS</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="https://www.trufflesuite.com/truffle" target="_blank"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Truffle</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="flex-1">
+          <p class="uppercase text-gray-500 md:mb-6">Cloud</p>
+          <ul class="list-reset mb-6">
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="https://www.alchemy.com/" target="_blank"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Alchemy</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="https://github.com/" target="_blank"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Github</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="https://www.netlify.com/" target="_blank"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Netifly</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="https://testnets.opensea.io/" target="_blank"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">OpenSea</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="https://pinata.cloud/" target="_blank"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Pinata</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-1">
+          <p class="uppercase text-gray-500 md:mb-6">Ethereum Testnet</p>
+          <ul class="list-reset mb-6">
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="https://rinkeby.etherscan.io/" target="_blank"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Rinkeby Etherscan</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="https://faucet.rinkeby.io/" target="_blank"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Rinkeby Faucet</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-1">
+          <p class="uppercase text-gray-500 md:mb-6">Developer</p>
+          <ul class="list-reset mb-6">
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="mailto:tan_kok_seng_mark01.pt@ichat.sp.edu.sg"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Enquiry</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a href="https://www.freepik.com/free-photos-vectors/background" class="text-gray-500">Background vector created by
+      freepik - www.freepik.com</a>
+  </footer>
+  <!-- jQuery if you need it
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   -->
-    <script>
-      var scrollpos = window.scrollY;
-      var header = document.getElementById("header");
-      var navcontent = document.getElementById("nav-content");
-      var navaction = document.getElementById("navAction");
-      var brandname = document.getElementById("brandname");
-      var toToggle = document.querySelectorAll(".toggleColour");
+  <script>
+    var scrollpos = window.scrollY;
+    var header = document.getElementById("header");
+    var navcontent = document.getElementById("nav-content");
+    var navaction = document.getElementById("navAction");
+    var brandname = document.getElementById("brandname");
+    var toToggle = document.querySelectorAll(".toggleColour");
 
-      document.addEventListener("scroll", function () {
-        /*Apply classes for slide in bar*/
-        scrollpos = window.scrollY;
+    document.addEventListener("scroll", function () {
+      /*Apply classes for slide in bar*/
+      scrollpos = window.scrollY;
 
-        if (scrollpos > 10) {
-          header.classList.add("bg-white");
-          navaction.classList.remove("bg-white");
-          navaction.classList.add("gradient");
-          navaction.classList.remove("text-gray-800");
-          navaction.classList.add("text-white");
-          //Use to switch toggleColour colours
-          for (var i = 0; i < toToggle.length; i++) {
-            toToggle[i].classList.add("text-gray-800");
-            toToggle[i].classList.remove("text-white");
-          }
-          header.classList.add("shadow");
-          navcontent.classList.remove("bg-gray-100");
-          navcontent.classList.add("bg-white");
-        } else {
-          header.classList.remove("bg-white");
-          navaction.classList.remove("gradient");
-          navaction.classList.add("bg-white");
-          navaction.classList.remove("text-white");
-          navaction.classList.add("text-gray-800");
-          //Use to switch toggleColour colours
-          for (var i = 0; i < toToggle.length; i++) {
-            toToggle[i].classList.add("text-white");
-            toToggle[i].classList.remove("text-gray-800");
-          }
-
-          header.classList.remove("shadow");
-          navcontent.classList.remove("bg-white");
-          navcontent.classList.add("bg-gray-100");
+      if (scrollpos > 10) {
+        header.classList.add("bg-white");
+        navaction.classList.remove("bg-white");
+        navaction.classList.add("gradient");
+        navaction.classList.remove("text-gray-800");
+        navaction.classList.add("text-white");
+        //Use to switch toggleColour colours
+        for (var i = 0; i < toToggle.length; i++) {
+          toToggle[i].classList.add("text-gray-800");
+          toToggle[i].classList.remove("text-white");
         }
-      });
-    </script>
-    <script>
-      /*Toggle dropdown list*/
-      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+        header.classList.add("shadow");
+        navcontent.classList.remove("bg-gray-100");
+        navcontent.classList.add("bg-white");
+      } else {
+        header.classList.remove("bg-white");
+        navaction.classList.remove("gradient");
+        navaction.classList.add("bg-white");
+        navaction.classList.remove("text-white");
+        navaction.classList.add("text-gray-800");
+        //Use to switch toggleColour colours
+        for (var i = 0; i < toToggle.length; i++) {
+          toToggle[i].classList.add("text-white");
+          toToggle[i].classList.remove("text-gray-800");
+        }
 
-      var navMenuDiv = document.getElementById("nav-content");
-      var navMenu = document.getElementById("nav-toggle");
+        header.classList.remove("shadow");
+        navcontent.classList.remove("bg-white");
+        navcontent.classList.add("bg-gray-100");
+      }
+    });
+  </script>
+  <script>
+    /*Toggle dropdown list*/
+    /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
 
-      document.onclick = check;
-      function check(e) {
-        var target = (e && e.target) || (event && event.srcElement);
+    var navMenuDiv = document.getElementById("nav-content");
+    var navMenu = document.getElementById("nav-toggle");
 
-        //Nav Menu
-        if (!checkParent(target, navMenuDiv)) {
-          // click NOT on the menu
-          if (checkParent(target, navMenu)) {
-            // click on the link
-            if (navMenuDiv.classList.contains("hidden")) {
-              navMenuDiv.classList.remove("hidden");
-            } else {
-              navMenuDiv.classList.add("hidden");
-            }
+    document.onclick = check;
+    function check(e) {
+      var target = (e && e.target) || (event && event.srcElement);
+
+      //Nav Menu
+      if (!checkParent(target, navMenuDiv)) {
+        // click NOT on the menu
+        if (checkParent(target, navMenu)) {
+          // click on the link
+          if (navMenuDiv.classList.contains("hidden")) {
+            navMenuDiv.classList.remove("hidden");
           } else {
-            // click both outside link and outside menu, hide menu
             navMenuDiv.classList.add("hidden");
           }
+        } else {
+          // click both outside link and outside menu, hide menu
+          navMenuDiv.classList.add("hidden");
         }
       }
-      function checkParent(t, elm) {
-        while (t.parentNode) {
-          if (t == elm) {
-            return true;
-          }
-          t = t.parentNode;
+    }
+    function checkParent(t, elm) {
+      while (t.parentNode) {
+        if (t == elm) {
+          return true;
         }
-        return false;
+        t = t.parentNode;
       }
-    </script>
-  </body>
+      return false;
+    }
+  </script>
+</body>
+
 </html>
